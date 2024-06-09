@@ -62,6 +62,7 @@ Scripts in the order they got called
 ### Question 2 -How Sling will Call the Script on the basis of url.
 
 ### Answer :
+We have a Url 
  http://localhost:4502/content/example/sample.print.a4.html
 
 Breakdown of URL Components
