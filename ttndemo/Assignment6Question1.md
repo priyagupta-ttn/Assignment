@@ -1,0 +1,1 @@
+##### Change the component Group to any custom name of your choice and then try dragging and dropping these component onto any page and try analyzing the dialogs (both on CRXDE and UI)
