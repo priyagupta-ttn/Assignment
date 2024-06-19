@@ -59,8 +59,6 @@ public class HelloWorldModel {
             + "Current page is:  " + currentPagePath + "\n";
     }
 
-    public String getMessage() {
-        return message;
-    }
+    public String getMessage() {return message;}
 
 }
