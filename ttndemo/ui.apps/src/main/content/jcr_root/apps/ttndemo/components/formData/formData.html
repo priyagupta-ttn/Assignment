@@ -1,0 +1,24 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='bootcamp.demo'}"/>
+    <sly data-sly-call="${clientlib.js @ categories='bootcamp.demo'}"/>
+</sly>
+
+<h3> FORM SUBMISSION </h3>
+<div>
+    <!-- Include the original form fields -->
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname"><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+    <!-- New fields added -->
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"><br>
+    <label for="about">About:</label><br>
+    <textarea id="about" name="about"></textarea><br>
+</div>
+
+<br>
+<input onClick="onSubmit()" type="submit" value="Submit">

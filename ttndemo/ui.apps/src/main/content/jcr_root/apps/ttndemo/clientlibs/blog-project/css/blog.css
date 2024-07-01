@@ -1,0 +1,11 @@
+.ColourBoxComponent {
+    background: red;  /* This sets the background to red */
+}
+
+#ColourBoxComponent {
+    background-color: black;  /* Corrected property name and this will take precedence */
+}
+.logo-image {
+    width: 50px; /* Adjust the width as needed */
+    height: auto; /* Maintains the aspect ratio */
+}

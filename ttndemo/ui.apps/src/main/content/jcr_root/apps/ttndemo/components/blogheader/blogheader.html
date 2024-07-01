@@ -1,0 +1,21 @@
+<sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='bootcamp.demo'}"/>
+    <sly data-sly-call="${clientlib.js @ categories='bootcamp.demo'}"/>
+</sly>
+
+<header class="blog-header py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+        <div class="col-12 text-center">
+            <a class="blog-header-logo text-danger font-weight-bold h3" href="homepage.html#">
+                <img  src="${properties.fileReference}" class="ttn-logo" alt="TTN Logo">
+                ${properties.pagetitle}
+            </a>
+        </div>
+    </div>
+</header>
+<div class="nav-scroller py-1 mb-2">
+    <nav class="nav d-flex">
+        <a class="p-2 h3 text-muted" href="homepage.html#">Home</a>
+        <a class="p-2  h3 text-muted" href="blogs.html#">Published Blogs</a>
+    </nav>
+</div>

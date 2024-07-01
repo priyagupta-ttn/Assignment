@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="card flex-md-row mb-4 shadow-sm h-md-1200">
+        <div class="row no-gutters">
+            <div class="col-md-8">
+                <div class="card-body d-flex flex-column align-items-start">
+                    <strong class="d-inline-block mb-2 text-primary">${properties.text1}</strong>
+                    <h3 class="mb-0">
+                        <a class="text-dark" href="blog.html#">${properties.text2}</a>
+                    </h3>
+                    <div data-sly-test="${!properties.date}"> Please author the date </div>
+                    <div data-sly-test="${properties.date}" class="mb-1 text-muted" data-sly-use.formatter="${'date.js' @ date=properties.date.time, mask='MMM dd'}">
+                        ${formatter.formattedDate}
+                    </div>
+                    <p class="card-text mb-auto">${properties.bigtext}</p>
+                    <a href="blog.html#">Continue reading</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img class="card-img-right flex-auto d-none d-lg-block" src="${properties.fileReferencefeed}" alt="Card image cap">
+            </div>
+        </div>
+    </div>
+</div>

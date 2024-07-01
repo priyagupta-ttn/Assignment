@@ -10,7 +10,7 @@ import org.osgi.service.metatype.annotations.AttributeDefinition;
 import org.osgi.service.metatype.annotations.Designate;
 import org.osgi.service.metatype.annotations.ObjectClassDefinition;
 
-@Component( service = MySimpleService.class, immediate = true)
+@Component( service = MySimpleService.class, immediate = true,name = "serviceDemoImpl")
 @Designate(ocd = MySimpleServiceImpl.MyServiceConfiguration.class)
 public class MySimpleServiceImpl implements MySimpleService {
 
@@ -25,7 +25,7 @@ public class MySimpleServiceImpl implements MySimpleService {
 
                 description = "Url at which api is hosted. Url must start with either http or https")
 
-        String api_host_url() default "";
+        String api_host_url() default "www.gmb.com";
 
     }
 

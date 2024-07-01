@@ -1,0 +1,26 @@
+<sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='bootcamp.demo'}"/>
+    <sly data-sly-call="${clientlib.js @ categories='bootcamp.demo'}"/>
+</sly>
+<h1>Order Coffee</h1>
+<form id="coffeeForm">
+    <div class="form-group">
+        <label for="coffee">Choose a coffee type:</label>
+        <select id="coffee" name="coffee">
+            <option value="espresso">Espresso - $3</option>
+            <option value="latte">Latte - $4</option>
+            <option value="cappuccino">Cappuccino - $4.5</option>
+            <option value="americano">Americano - $3.5</option>
+            <option value="mocha">Mocha - $5</option>
+            <option value="macchiato">Macchiato - $4.5</option>
+            <option value="flat_white">Flat White - $4</option>
+            <option value="black_coffee">Black Coffee - $2.5</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" value="1">
+    </div>
+    <div id="total">Total: $0.00</div>
+    <button type="submit">Submit Order</button>
+</form>
